@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.11.2.min.js" ></script>
+
+<script>
+	$(document).ready(function(){
+		var boxes = $('div#r1');
+		$("._center img").width($("._center").width());			
+		boxes.height(boxes.width());
+				  $('._left').width(   $('.boot').width()  * 0.331 );
+				  $('._center').width(   $('.boot').width()  * 0.156 );
+				   $('._center img').width(   $('._center').width() );
+				  $('._right').width(   $('.boot').width()  * 0.5);
+				  if($(window).width() >1169){
+				  $('._right #r1').width(   $('._right').width() *0.33 );
+				  $('.content .boot ._left img').height("110px").css('margin-top','40px');
+				  			}
+				  			else {
+				  				$('._right #r1').width(   $('._right').width() *0.32 );
+				  				$('.content .boot ._left span').css("font-size","15px");
+				  				$('.content .boot ._left img').height("100px");
+				  				if($(window).width() <= 1028){
+				  					$('.content .boot ._left img').css('margin-top','1px');
+				  					$('.content .boot ._left span').css("font-size","13px");
+				  						$('.content .boot ._left img').height("50px");
+				  					
+				  				if($(window).width() <= 734){
+				  					$("#r1 img").css('top','15%').css('width','70%');
+				  				}			}
+				  		
+				  			}
+				  $('._right #r1').height($('._right #r1').width());
+				  $('.boot').height( $('._right #r1').height()*2);
+				   $('._center img').height( $('.boot').height()   );
+				  
+			window.onresize = function(){
+				
+				  $('._left').width(   $('.boot').width()  * 0.331 );
+				  $('._center').width(   $('.boot').width()  * 0.156 );
+				   $('._center img').width(   $('._center').width() );
+				  $('._right').width(   $('.boot').width()  * 0.5);
+
+				  if($(window).width() >1169){
+				  $('._right #r1').width(   $('._right').width() *0.33 );
+				  			}
+				  			else {
+				  				$('._right #r1').width(   $('._right').width() *0.32 );
+				  				$('.content .boot ._left img').height("100px");
+				  				$('.content .boot ._left').css("font-size","14px");
+				  		
+
+				  					if($(window).width() <= 1028){
+				  					$('.content .boot ._left img').css('margin-top','1px');
+				  					$('.content .boot ._left span').css("font-size","10px");
+				  					$('.content .boot ._left img').height("50px");
+
+
+				  					if($(window).width() <= 734){
+				  					$("#r1 img").css('top','15%').css('width','70%');
+				  				}
+
+				  				}
+
+				  		
+
+				  			}
+
+				  $('._right #r1').height($('._right #r1').width());
+				  $('.boot').height( $('._right #r1').height()*2);
+				   $('._center img').height( $('.boot').height()   );
+				  
+					console.log($(window).width());
+			
+				
+
+				}
+
+
+	$(document).scroll(function(){
+		console.log('scroll: '+ document.body.scrollTop);	
+				if(document.body.scrollTop > 600){
+					$('.scroll').css('display','block');
+				}
+				else{
+					$('.scroll').css('display','none');
+				}
+	});
+
+	$('.scroll').click(function(){
+
+		$('html,body').animate({
+    		scrollTop: $('header').offset().top - 5 // or 10
+			}, 'slow');
+		$('.scroll').css('display','none');		
+
+	});
+	
+
+
+
+	});	
+</script>
+
+
+</head>
+<body>
+	
+
+<header>
+
+<div class="container">
+
+	<div class="logo">
+		<img src="img/logo.gif" alt="">	
+		led lighting solutions
+	</div>
+
+	<div class="menu">
+		<ul>
+			<li><a href="#">produkte</a></li>
+			<li><a href="#">technologie</a></li>
+			<li><a href="#">beratung</a></li>
+			<li><a href="#">kontakt</a></li>
+		</ul>
+	</div>
+
+</div>	
+
+</header>
+
+
+<div class="teaser">
+	
+
+	<div class="arrow_left">
+			<img src="img/arrow.gif" alt="">
+	</div>
+
+	<div class="arrow_right">
+			<img src="img/arrow.gif" alt="">
+	</div>
+	
+	<div class="text">
+		<span class='b'>led beleuchtung für gewerberäume</span>		
+		<span class='c'>jetztumrüsten und sparen</span>	
+		
+	</div>
+
+
+	<img src="img/bis.gif" alt="" class="bis">
+
+</div>
+
+
+
+<div class="content">
+	
+
+	<div class="social"><a href="#"><img src="img/facebook.png" alt=""></a></div>
+
+	<h1 class='uber'>Led beleuchtung fur den mittelstand</h1>
+
+	<div class="left">
+	Hohe Energieeffizienz und eine lange Lebensdauer - LED
+	Panels sind die erste Wahl, wenn es um eine zukunfissichere
+	Form der Beleuchtung in Geschafisräumen geht
+	Steigen Sie jetzt auf Proluxa LED Panels um und sparen Sie
+	ab der ersten Minute.
+
+	</div>
+	
+	<div class="right">
+	Dank unseres kundenfreundlichen Leasingmodells und der
+	hohen Energieeinsparung von bis zu 54% entstehen mit
+	einer Umrüstung für Sie nicht nur keinerlei zusätzliche Kosten
+	über die Gesamtiebensdauer der Proluxa LED Panels
+	haben Sie sogar mehrere Tausend Euro gespartI	
+
+	</div>
+
+	<a href="#" class="but"> Jetzt Termin vereinbaren</a>
+
+	<div class="boot">
+		<div class="_left">
+			
+		<h3>Lorem ipsum dolor sit amet</h3>
+		<span>
+		consetetur sadipscing elitr, sed diam nonumy
+		eirmod tempor invidunt ut Iabore et dolore magna
+		aliquyam erat, sed diam voluptua. At vero eos et
+		accusam etjusto duo dolores et ea rebum. Stet
+		dita kasd gubergren, no sea takimata sanctus est
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+		amet, consetetur sadipscing elitr, sed diam
+		nonumy eirmod tempor invidunt ut labore et
+		dolore magna.
+		</span>
+				<img src="img/ecolabel.png" alt="">
+		</div>
+		<div class="_center">
+				
+			<img src="img/iuy_03.jpg" alt="">
+			
+		</div>
+		
+		<div class="_right">
+			<div id="r1"><img src="img/sp3.png" class="sp" alt=""></div>
+			<div id="r1"><img src="img/clock.png" alt=""></div>
+			<div id="r1"><img src="img/sp1.jpg" class="sp" alt=""></div>
+			<div id="r1"><img src="img/house.png" alt=""></div>
+			<div id="r1"><img src="img/sp5.jpg" class="sp" alt=""></div>
+			<div id="r1"><img src="img/circle.png" alt=""></div>
+		</div>
+
+	</div>
+	
+
+	<h1 class="uber" >Uber Uns</h1>
+
+
+	<div class="left">
+		Durch unsere direkte Zusammenarbeit mitfu‘hrenden
+		Produktionsstätten für LED Technologie sind wir in der Lage,
+		Ihnen beste Markenqualität zu einem überragenden Preis
+		Leistungsverhältnis anzubieten.
+		Überzeugen Sie sich selbst und vereinbaren Siejetzt einen
+		Termin mit uns.
+	</div>
+	<div class="right">
+		
+		Lorem ipsum dolor sit amet
+		consetetur sadipscing elitr, sed diam nonumy
+		eirmod tempor invidunt ut Iabore et dolore magna
+		aliquyam erat, sed diam voluptua. At vero eos et
+		accusam etjusto duo dolores et ea rebum. Stet
+		dita kasd gubergren, no sea takimata sanctus est
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+		amet, consetetur sadipscing elitr, sed diam
+		nonumy eirmod tempor invidunt ut labore et
+		dolore magna.
+	</div>
+
+
+	<a href="" class="download"><img src="img/box3.gif" alt=""></a>
+
+
+</div>
+
+<div class="scroll"><a href="#"><img src="img/arrow.gif" alt=""></a></div>
+
+<footer>
+	<ul>
+		<li><a href="#"><img src="img/smalllogo.jpg"> ist eine Marke der EUROiSTYLE GmbH</a></li>
+		<li><a href="#">Inselkammersrasse 10</a></li>
+		<li><a href="#">82008 Unterhaching</a></li>
+		<li><a href="#">Tel. 089/919290 5-11</a></li>
+		<li><a href="#">Fax 089/91 92 90 5 - 19 </a></li>
+		<li><a href="#">E-mail. info@proluxa.de</a></li>
+	</ul>
+</footer>
+
+
+
+
+
+</body>
+</html>
